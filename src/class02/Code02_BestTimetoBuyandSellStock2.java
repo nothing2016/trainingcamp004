@@ -1,5 +1,10 @@
 package class02;
 
+/**
+ * 给定一个数组arr,从左到右表示昨晚股票的价格
+ * 作为一个时候诸葛亮，你想知道如果随便交易(可以多次交易)
+ * 且每次交易只能交易一股，返回能挣到的最大钱数
+ */
 public class Code02_BestTimetoBuyandSellStock2 {
 
 	public static int maxProfit(int[] prices) {
