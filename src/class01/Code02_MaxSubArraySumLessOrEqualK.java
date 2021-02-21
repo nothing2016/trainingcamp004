@@ -2,7 +2,16 @@ package class01;
 
 import java.util.TreeSet;
 
+/**
+ * 求子数组累加和中，最接近K的值，数组中有整数和负数，
+ * 只能使用有序表，如果全部是整数，可以使用窗口来解决
+ */
 public class Code02_MaxSubArraySumLessOrEqualK {
+	public static void main(String[] args) {
+		int [] arr = new int[]{4};
+		int K = 11;
+		System.out.println(getMaxLessOrEqualK(arr,K));
+	}
 
 	// 请返回arr中，求个子数组的累加和，是<=K的，并且是最大的。
 	// 返回这个最大的累加和

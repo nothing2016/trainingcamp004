@@ -2,6 +2,9 @@ package class01;
 
 import java.util.TreeSet;
 
+/**
+ * 对于02中的矩阵版本
+ */
 public class Code03_MaxSumofRectangleNoLargerThanK {
 
 	public static int maxSumSubmatrix(int[][] matrix, int k) {

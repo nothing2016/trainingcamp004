@@ -1,5 +1,16 @@
 package class01;
 
+/**
+ * 可以从矩阵的任意位置出发，可以往上、下、左、右四个方向走
+ * 求找到最长的递增链，如下矩阵：
+ *  1  3  5
+ *  6  1  4
+ *  7  2  3
+ *
+ *  最大递增链就是1 2 3 4 5， 长度为5
+ *
+ *  题解：递归 + 记忆化缓存，能达到O(m * n)时间复杂度
+ */
 public class Code01_LongestIncreasingPath {
 
 	public static int maxPath(int[][] matrix) {
@@ -80,6 +91,11 @@ public class Code01_LongestIncreasingPath {
 		return ans;
 	}
 
+	/**
+	 * 这个方法和上面是一样的，就是不同的写法而已
+	 * @param m
+	 * @return
+	 */
 	public static int longestIncreasingPath(int[][] m) {
 		if (m == null || m.length == 0 || m[0].length == 0) {
 			return 0;
