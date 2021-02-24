@@ -2,6 +2,11 @@ package class03;
 
 import java.util.Arrays;
 
+/**
+ * 给定一个无序数组arr,返回如果排序之后，相邻两数之间的最大差值
+ * 如[3,1,7,9], 如果排序过后就是[1,3,7,9],那么相邻的最大差值为4，就返回4
+ * 要求：不能排序，并要求时间复杂度为O(N)
+ */
 public class Code01_MaxGap {
 
 	public static int maxGap(int[] nums) {

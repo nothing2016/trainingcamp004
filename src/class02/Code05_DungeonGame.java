@@ -1,5 +1,12 @@
 package class02;
 
+/**
+ * 给定一个二维数组，表示一个地图，游戏的规则是骑士只能从左上角走到右下角
+ * 每次只能向右走或者向下走，如果是负数，表示有怪兽，要掉血matrix[i][j]表示要掉的血量
+ * 如果是非负数，表示是血瓶，能让骑士回血，走任何一步，血量都要>=1才能活。
+ * 为了保证能见到公主，骑士最少需要多少血？
+ *
+ */
 public class Code05_DungeonGame {
 
 	public static int needMin(int[][] matrix) {
