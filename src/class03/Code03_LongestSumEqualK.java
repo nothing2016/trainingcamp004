@@ -2,6 +2,9 @@ package class03;
 
 import java.util.HashMap;
 
+/**
+ * 二叉树中，只能往下走，收集累加和为K的，最长路径有多少个节点
+ */
 public class Code03_LongestSumEqualK {
 
 	public static class Node {
@@ -43,6 +46,7 @@ public class Code03_LongestSumEqualK {
 			}
 			process(X.left, level + 1, allSum, K, sumMap);
 			process(X.right, level + 1, allSum, K, sumMap);
+			// 回溯，让allSum最早出现的位置只对当前路径的有影响
 			if (sumMap.get(allSum) == level) {
 				sumMap.remove(allSum);
 			}
