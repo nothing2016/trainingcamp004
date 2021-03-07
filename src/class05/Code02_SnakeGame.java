@@ -2,6 +2,13 @@ package class05;
 
 import java.util.Arrays;
 
+/**
+ * 贪吃蛇问题
+ * 给定一个矩阵，一个matrix[i][j]的值，有正有负和0，当踏上这个点时，这个点的
+ * 值会被蛇给吸收，但是在吃的过程中，必须保证蛇的值是>=0的，不然游戏就会结束，
+ * 这个蛇有个特殊的技能，但是只能使用一次，就是到达一个点后，可以将这个点的值
+ * 变成相反数，求这个蛇能得到的最高的分数（值）?
+ */
 public class Code02_SnakeGame {
 
 	public static int walk1(int[][] matrix) {
