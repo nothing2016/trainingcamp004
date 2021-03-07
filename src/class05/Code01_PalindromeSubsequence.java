@@ -1,5 +1,10 @@
 package class05;
 
+/**
+ * 最长回文子序列问题
+ * 解法1： 将字符串s和s的逆序字符串求最长公共子序列问题
+ * 解法2： 范围上的尝试模型
+ */
 public class Code01_PalindromeSubsequence {
 
 	public static int maxLen1(String str) {
@@ -44,16 +49,20 @@ public class Code01_PalindromeSubsequence {
 			return 0;
 		}
 		char[] str = s.toCharArray();
+		// dp[i][j] 表示范围[i,j]上的最长回文子序列是多少
 		int[][] dp = new int[str.length][str.length];
 		for (int i = 0; i < str.length; i++) {
+			// 一个字符肯定是1(斜线上)
 			dp[i][i] = 1;
 		}
 		for (int i = 0; i < str.length - 1; i++) {
+			// 右上方第二条斜线，相等就为2
 			dp[i][i + 1] = str[i] == str[i + 1] ? 2 : 1;
 		}
 		for (int i = str.length - 2; i >= 0; i--) {
 			for (int j = i + 2; j < str.length; j++) {
 				dp[i][j] = Math.max(dp[i][j - 1], dp[i + 1][j]);
+				// 只有满足相等才具备的性质
 				if (str[i] == str[j]) {
 					dp[i][j] = Math.max(dp[i + 1][j - 1] + 2, dp[i][j]);
 				}
