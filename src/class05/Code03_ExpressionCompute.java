@@ -2,6 +2,9 @@ package class05;
 
 import java.util.LinkedList;
 
+/**
+ * 括号表达式计算值问题 如，1 + 3 - (5 * 7)/6 + 2 的值是多少
+ */
 public class Code03_ExpressionCompute {
 
 	public static int getValue(String str) {
