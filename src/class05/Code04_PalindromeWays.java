@@ -2,7 +2,7 @@ package class05;
 
 /**
  * 给定一个字符串s,子序列中是回文串的总数是多少？其中定义空字符串不是回文
- * 如 ABA 的总数是4中，第一个A和最后一个A,AA 和B,一共 4 种
+ * 如 ABA 的总数是4中，第一个A和最后一个A,AA 和B,还有ABA，一共 5 种
  */
 public class Code04_PalindromeWays {
 
@@ -81,9 +81,9 @@ public class Code04_PalindromeWays {
 
 	public static void main(String[] args) {
 		System.out.println(way1("ABA"));
-		System.out.println(way1("XXY"));
-
 		System.out.println(way2("ABA"));
+
+		System.out.println(way1("XXY"));
 		System.out.println(way2("XXY"));
 	}
 
